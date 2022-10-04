@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Walter+Turncoat&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #4f30ff;
+  --secondary-color: #ebd015;
+  --big-text-font: 'Walter Turncoat', cursive;
+  --sm-text-font: 'League Spartan', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--sm-text-font);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container-snap::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container-snap {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.big-text-font {
+  font-family: var(--big-text-font);
+}
+
+.dark-bg {
+  background-color: rgb(30, 41, 59, 1);
+}
